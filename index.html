@@ -8,39 +8,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class = 'personal-info'>
-        <div class = 'picture'>
-            <img src = 'https://static.techspot.com/images2/downloads/topdownload/2020/06/2020-06-09-ts3_thumbs-7fd.png', alt="portrait">
+   <div id="container">
+    <div id="navbar">
+        <h1 id="name"></h1>
+        <ul id="navbar-list">
+            <li id="scroll-up"><a href="#container">HOME</a></li>
+            <li><a href="#about-page">ABOUT</a></li>
+            <li><a href="#project-page">PROJECTS</a></li>
+            <li><a href="#contact-page">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="intro">
+        <div id="intro-name">
+            <p>HELLO, MY NAME IS</p>
+            <h1>_________</h1>
+            <div id="name-title">
+                <h1>PAUL PHAM</h1>
+                <h3>Web Developer</h3>
+            </div>
+            <div id="contact-info">
+                <p>paulpham3000@gmail.com</p>
+                <p>0450 551 919</p>
+            </div>
         </div>
-        <div class = 'biography'>
-            <h1>About me</h1>
-            <p>My nem Jeff.</p>
+        <div id="portrait-container">
+            <img id="portrait" src="img/photo.JPG" alt="portrait of me">
         </div>
     </div>
-    <div class = 'works'>
-        <div class = 'projects-pending'>
-            <div class = 'works-header'>
-            <h1>Projects</h1>
-            </div>
-            <div class = 'works-pictures'>
-            <img src = 'https://static.techspot.com/images2/downloads/topdownload/2020/06/2020-06-09-ts3_thumbs-7fd.png', alt = 'temp-name-one'> <!-- try and arrange these in a row array (horizontally). Also figure out how to anchor a link onto these images-->
-            <img src = 'https://static.techspot.com/images2/downloads/topdownload/2020/06/2020-06-09-ts3_thumbs-7fd.png', alt = 'temp-project-two'>
-            </div>
+    <div id="about-page"><a href="#about-page"></a>
+        <div id="sect-one" class="about-para">
+            <h1>ABOUT ME</h1>
+            <h1>_________</h1>
+            <p>Hello, I am an aspiring full-stack developer! Originally a self learner, I have completed a bootcamp covering front-end and back-end development. While I'm not coding, I enjoy cooking, video games, staying active and original soundtrack music.</p>
         </div>
-        <div class = 'contact-info'>
-            <div class = 'contact-header'>
-            <h1>Contact Me</h1>
+        <div id="sect-two" class="about-para">
+            <h1>LANGUAGES</h1> 
+            <h1>_________</h1>
+            <ul id="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul> 
+        </div>
+        <div id="sect-three" class="about-para">
+            <h1>SKILLS</h1>
+            <h1>_________</h1>
+            <ul>
+                <li>Critical Thinker</li>
+                <li>Autonomous</li>
+                <li>Collaborative</li>
+                <li>Fast Learner</li>
+            </ul>
+        </div>
+    </div>
+    <div id="project-page"><a href="#project-page"></a>
+        <h1>PROJECTS</h1>
+        <h1>_________</h1>
+        <div id="project-display">
+            <div id="project-one">
+                <h2>Project 1 name</h2>
+                <img src="img/placeholder.jpg" alt="">
             </div>
-            <div class = 'contact-pictures'>
-            <img src = 'https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png', alt = 'LinkedIn'> <!-- attach an image to all these-->
-            <img src = 'https://cdn3.iconfinder.com/data/icons/inficons/512/github.png', alt = 'Github'>
-            <img src = 'https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-512.png', alt = 'Email'> <!-- Make this one flip on itself to reveal the email. The other two just need a link attached. To make it look cleaner, maybe arrange it underneath the two others which will be anchored to an external link.-->
+            <div id="project-two">
+                <h2>Project 2 name</h2>
+                <img src="img/placeholder.jpg" alt="">
+            </div>
+            <div id="project-three">
+                <h2>Project 3 name</h2>
+                <img src="img/placeholder.jpg" alt="">
             </div>
         </div>
     </div>
+    <div id="contact-page"><a href="#contact-page"></a>
+        <h1>CONTACT</h1>
+        <h1>_________</h1>
+        <a target="_blank" href='https://www.linkedin.com/in/paul-pham-b49244110/'><img src="img/linkedin.png" alt="linkedin"></a>
+        <a target="_blank" href='https://github.com/Paultree'><img src="img/git.png" alt=""></a>
+    </div>
+    <footer>Made by Paul Pham</footer>
+   </div>
 </body>
 
-<script src="index.js">
+<script src="script.js">
 
 </script>
 </html>
