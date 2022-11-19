@@ -7,7 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
 })
 
-document.getElementById('scroll-up').addEventListener('click', () => {
+document.getElementById('topPage').addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth',

@@ -6,51 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAUL PHAM</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
    <div id="container">
-    <div id="navbar">
-        <h1 id="name"></h1>
-        <ul id="navbar-list">
-            <li id="scroll-up"><a href="#container">HOME</a></li>
+    <navbar class="navbar">
+        <ul class="navbar__list navbar__list--center">
+            <li id="topPage"><a href="#container">HOME</a></li>
             <li><a href="#about-page">ABOUT</a></li>
             <li><a href="#project-page">PROJECTS</a></li>
             <li><a href="#contact-page">CONTACT</a></li>
         </ul>
-    </div>
-    <div id="intro">
-        <div id="intro-name">
+    </navbar>
+
+    <section class="intro">
+        <div class="intro__name">
             <p>HELLO, MY NAME IS</p>
             <h1>_________</h1>
-            <div id="name-title">
+            <div class="intro__name intro__name--title">
                 <h1>PAUL PHAM</h1>
                 <h3>Web Developer</h3>
             </div>
-            <div id="contact-info">
+            <div class="intro__name intro__name--contact">
                 <p>paulpham3000@gmail.com</p>
                 <p>0450 551 919</p>
             </div>
         </div>
-        <div id="portrait-container">
-            <img id="portrait" src="img/photo.JPG" alt="portrait of me">
+        <div class="intro__portrait">
+            <img class="intro__portrait intro__portrait--photo" src="img/photo.JPG" alt="portrait of me">
         </div>
-    </div>
-    <div id="about-page"><a href="#about-page"></a>
-        <div id="sect-one" class="about-para">
+    </section>
+
+    <section id="about-page" class="about"><a href="#about-page"></a>
+        <div class="about__para about__para--left">
             <h1>ABOUT ME</h1>
             <h1>_________</h1>
-            <p>Hello, I am an aspiring full-stack developer! Originally a self learner, I have completed a bootcamp covering front-end and back-end development. While I'm not coding, I enjoy cooking, video games, staying active and original soundtrack music.</p>
+            <p>Hello, I am a Sydney-based web developer! Passionate about tech and it's potential to optimise and connect.</p>
+            <p>While I'm not coding, I enjoy cooking, video games, staying active and original soundtrack music.</p>
         </div>
-        <div id="sect-two" class="about-para">
+        <div class="about__para about__para--center">
             <h1>LANGUAGES</h1> 
             <h1>_________</h1>
-            <ul id="skills-list">
+            <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
+                <li>SASS</li>
             </ul> 
         </div>
-        <div id="sect-three" class="about-para">
+        <div class="about__para about__para--right">
             <h1>SKILLS</h1>
             <h1>_________</h1>
             <ul>
@@ -60,36 +64,48 @@
                 <li>Fast Learner</li>
             </ul>
         </div>
-    </div>
-    <div id="project-page"><a href="#project-page"></a>
+    </section>
+
+    <section id="project-page" class="projects"><a href="#project-page"></a>
         <h1>PROJECTS</h1>
         <h1>_________</h1>
-        <div id="project-display">
-            <div id="project-one">
-                <h2>Project 1 name</h2>
-                <img src="img/placeholder.jpg" alt="">
+        <div class="projects__container">
+            <div class="projects__container--one">
+                <h2>Wordle Clone</h2>
+                <img src="img/wordle.png">
+                <p>A simple clone of the web game Wordle to demonstrate DOM manipulation and Javascript.</p>
+                <p><a target='_blank' href="https://paultree.github.io/wordle-clone/">Click to play..</a></p>
+                <p>OR</p>
+                <p><a target='_blank' href="https://github.com/Paultree/wordle-clone">Head to repo..</a></p>
             </div>
-            <div id="project-two">
-                <h2>Project 2 name</h2>
-                <img src="img/placeholder.jpg" alt="">
+            <div class="projects__container--two">
+                <h2>Wordle Clone</h2>
+                <img src="img/wordle.png">
+                <p>A simple clone of the web game Wordle to demonstrate DOM manipulation and Javascript.</p>
+                <p><a target='_blank' href="https://paultree.github.io/wordle-clone/">Click to play..</a></p>
+                <p>OR</p>
+                <p><a target='_blank' href="https://github.com/Paultree/wordle-clone">Head to repo..</a></p>
             </div>
-            <div id="project-three">
-                <h2>Project 3 name</h2>
-                <img src="img/placeholder.jpg" alt="">
+            <div class="projects__container--three">
+                <h2>Wordle Clone</h2>
+                <img src="img/wordle.png">
+                <p>A simple clone of the web game Wordle to demonstrate DOM manipulation and Javascript.</p>
+                <p><a target='_blank' href="https://paultree.github.io/wordle-clone/">Click to play..</a></p>
+                <p>OR</p>
+                <p><a target='_blank' href="https://github.com/Paultree/wordle-clone">Head to repo..</a></p>
             </div>
         </div>
-    </div>
-    <div id="contact-page"><a href="#contact-page"></a>
+    </section>
+
+    <section id="contact-page" class="contact"><a href="#contact-page"></a>
         <h1>CONTACT</h1>
         <h1>_________</h1>
-        <a target="_blank" href='https://www.linkedin.com/in/paul-pham-b49244110/'><img src="img/linkedin.png" alt="linkedin"></a>
-        <a target="_blank" href='https://github.com/Paultree'><img src="img/git.png" alt=""></a>
-    </div>
+        <p></p>
+        <a target="_blank" href='https://www.linkedin.com/in/paul-pham-b49244110/'><img src="img/linkedin.png" alt="linkedin" class="contact__img"></a>
+        <a target="_blank" href='https://github.com/Paultree'><img src="img/git.png" alt="github" class="contact__img"></a>
+        <a href="mailto:paulpham3000@gmail.com"><img src="img/mail.png" alt="email" class="contact__img contact__img--large"></a>
+    </section>
     <footer>Made by Paul Pham</footer>
    </div>
 </body>
-
-<script src="script.js">
-
-</script>
 </html>
