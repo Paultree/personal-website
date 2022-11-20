@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 100% 100%;
+    background-position: top;
     margin: 0;
   }
   * {
@@ -61,7 +61,6 @@
     justify-content: flex-end;
     display: flex;
     margin-right: 2.5%;
-    margin-top: 2.5%;
   }
   .intro__portrait--photo {
     width: 50%;
@@ -83,6 +82,9 @@
   }
   .about__para--right {
     margin-right: 2.5%;
+  }
+  .about__para--list {
+    padding-left: 10%;
   }
   .projects {
     margin: 0 5%;
@@ -115,118 +117,60 @@
     margin-top: 5.8%;
   }
 }
-@media only screen and (min-device-width: 992px) {
-  body {
-    background-image: url("img/background.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-  }
-  * {
-    font-family: "Signika Negative", sans-serif;
-    color: white;
-  }
+@media only screen and (min-device-width: 768px) {
   /* Navbar */
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    top: 0;
-  }
   .navbar__list {
-    display: flex;
-    list-style: none;
-    flex: 1;
-    font-size: 2rem;
-    gap: 1.5rem;
-    margin: 1% auto;
-  }
-  .navbar__list--center {
-    justify-content: center;
-  }
-  .navbar a {
-    text-decoration: none;
-  }
-  .navbar li:hover {
-    text-shadow: 2px 2px rgb(227, 215, 215);
-    transition-duration: 0.2s;
+    font-size: 1.5rem;
+    gap: 1rem;
   }
   /* Home page */
-  .intro {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5.8%;
-  }
   .intro__name {
-    align-self: flex-end;
+    font-size: 1rem;
+  }
+  .intro__portrait--photo {
+    width: 60%;
+  }
+  .about {
+    font-size: 1rem;
+  }
+  .projects {
+    font-size: 1rem;
+  }
+  .contact {
+    font-size: 1rem;
+  }
+  .contact__img {
+    width: 150px;
+  }
+}
+@media only screen and (min-device-width: 992px) {
+  /* Navbar */
+  .navbar__list {
+    font-size: 2rem;
+    gap: 1.5rem;
+  }
+  /* Home page */
+  .intro__name {
     font-size: 1.3rem;
-    margin-left: 5%;
-    margin-bottom: 5%;
-  }
-  .intro__name--title {
-    margin: 0;
-    padding: 0;
-  }
-  .intro__name--contact {
-    margin: 0;
-    padding: 0;
-  }
-  .intro__portrait {
-    justify-content: flex-end;
-    display: flex;
-    margin-right: 2.5%;
   }
   .intro__portrait--photo {
     width: 75%;
-    border-radius: 50%;
   }
   .about {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-    padding: 5% 0;
     font-size: 1.3rem;
-  }
-  .about__para {
-    width: 33%;
-  }
-  .about__para--left {
-    margin-left: 5%;
-    padding-right: 10%;
-  }
-  .about__para--right {
-    margin-left: 5%;
   }
   .projects {
-    margin: 0 5%;
     font-size: 1.3rem;
-    text-align: center;
-    margin-top: 5.8%;
-    padding-top: 5%;
-  }
-  .projects__container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .projects img {
-    width: 50%;
   }
   .contact {
-    text-align: center;
-    margin-top: 5.8%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 5%;
+    font-size: 1.3rem;
   }
   .contact__img {
     width: 200px;
   }
-  footer {
-    text-align: center;
-    background-color: #F89880;
-    margin-top: 5.8%;
+  .navbar li:hover {
+    text-shadow: 2px 2px rgb(227, 215, 215);
+    transition-duration: 0.2s;
   }
 }
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
-// @import 'phone-styles';
+@import 'font-sizes';
+@import 'screen-adjustments';
 
 //Phone
 @media only screen and (min-device-width: 320px) {
@@ -9,7 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 100% 100%;
+    background-position:  top;
     margin: 0;
     
 }
@@ -34,7 +35,7 @@
             display: flex;
             list-style: none;
             flex: 1;
-            font-size: 1rem;
+            font-size: $phone-nav;
             gap: 0.5rem;
             margin: 1% auto;
 
@@ -58,7 +59,7 @@
 
         &__name {
             align-self: flex-end;
-            font-size: 0.5rem;
+            font-size: $phone-font;
             margin-left: 5%;
             margin-bottom: 5%;
 
@@ -77,7 +78,6 @@
             justify-content: flex-end;
             display: flex;
             margin-right: 2.5%;
-            margin-top: 2.5%;
 
             &--photo {
                 width: 50%;
@@ -93,7 +93,7 @@
         display: flex;
         justify-content: space-around;
         padding: 5% 0;
-        font-size: 0.5rem;
+        font-size: $phone-font;
 
         &__para {
             width: 33%;
@@ -106,6 +106,10 @@
             &--right {
                 margin-right: 2.5%;
             }
+
+            &--list {
+                padding-left: 10%;
+            }
         }
     }
 
@@ -113,7 +117,7 @@
 
     .projects {
         margin: 0 5%;
-        font-size: 0.5rem;
+        font-size: $phone-font;
         text-align: center;
         margin-top: 5.8%;
         padding-top: 5%;
@@ -157,158 +161,19 @@
 }
 
 //tablet
-@media only screen and (min-device-width : 768px) {}
-
-//laptop
-@media only screen and (min-device-width: 992px) {
-    body {
-    background-image: url('img/background.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
+@media only screen and (min-device-width : 768px) {
+    @include screen-adjust($tablet-nav, $tablet-font, 60%, 150px, 1rem);
     
 }
 
-* {
-    font-family: 'Signika Negative', sans-serif;
-    color: white;
 
-}
-
-
-/* Navbar */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    top: 0;
-
-    &__list {
-        display: flex;
-        list-style: none;
-        flex: 1;
-        font-size: 2rem;
-        gap: 1.5rem;
-        margin: 1% auto;
-
-        &--center {
-            justify-content: center;
-        }
-    }
-}
-
-.navbar a {
-    text-decoration: none;
-}
+//laptop
+@media only screen and (min-device-width: 992px) {
+    @include screen-adjust($laptop-nav, $laptop-font, 75%, 200px, 1.5rem);
 
 .navbar li:hover {
     text-shadow: 2px 2px rgb(227, 215, 215);
     transition-duration: 0.2s;
-}
-
-/* Home page */
-
-.intro {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5.8%;
-
-    &__name {
-        align-self: flex-end;
-        font-size: 1.3rem;
-        margin-left: 5%;
-        margin-bottom: 5%;
-
-        &--title {
-            margin: 0;
-            padding: 0;
-        }
-
-        &--contact {
-            margin: 0;
-            padding: 0;
-        }
-    }
-
-    &__portrait {
-        justify-content: flex-end;
-        display: flex;
-        margin-right: 2.5%;
-
-        &--photo {
-            width: 75%;
-            border-radius: 50%;
-        }
-    }
-}
-
-// About
-
-.about {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
-    padding: 5% 0;
-    font-size: 1.3rem;
-
-    &__para {
-        width: 33%;
-
-        &--left {
-            margin-left: 5%;
-            padding-right: 10%;
-        }
-
-        &--right {
-            margin-left: 5%;
-        }
-    }
-}
-
-//Projects
-
-.projects {
-    margin: 0 5%;
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 5.8%;
-    padding-top: 5%;
-    
-
-    &__container {
-        display: flex;
-        justify-content: space-between;
-
-    }
-}
-
-.projects img {
-    width: 50%;
-}
-
-//Contact
-
-.contact {
-    text-align: center;
-    margin-top: 5.8%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 5%;
-
-    &__img {
-        width: 200px;
-
-    }
-}
-
-//Footer
-
-footer {
-    text-align: center;
-    background-color: #F89880;
-    margin-top: 5.8%;
-}
+}   
 }
 

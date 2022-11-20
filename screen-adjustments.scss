@@ -1,0 +1,49 @@
+@mixin screen-adjust($font-nav, $font-text, $portrait, $contact, $gap) {
+    /* Navbar */
+    .navbar {
+        &__list {
+            font-size: $font-nav;
+            gap: $gap;
+        }
+    }
+
+
+    /* Home page */
+
+    .intro {
+        &__name {
+            font-size: $font-text;
+        }
+
+        &__portrait {
+
+            &--photo {
+                width: $portrait;
+            }
+        }
+    }
+
+    // About
+
+    .about {
+        font-size: $font-text;
+    }
+
+    //Projects
+
+    .projects {
+        font-size: $font-text;
+    }
+
+    //Contact
+
+    .contact {
+        font-size: $font-text;
+
+        &__img {
+            width: $contact;
+        }
+    }
+}
+
+
