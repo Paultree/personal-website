@@ -12,7 +12,6 @@
   * {
     font-family: "Signika Negative", sans-serif;
     color: white;
-    border: 1px solid red;
   }
   /* Navbar */
   .navbar {
@@ -66,7 +65,6 @@
   }
   .intro__portrait--photo {
     width: 50%;
-    height: auto;
     border-radius: 50%;
   }
   .about {
@@ -182,7 +180,6 @@
   }
   .intro__portrait--photo {
     width: 75%;
-    height: auto;
     border-radius: 50%;
   }
   .about {
