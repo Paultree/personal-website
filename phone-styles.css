@@ -1,0 +1,119 @@
+@media only screen and (min-device-width: 320px) {
+  body {
+    background-image: url("img/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    margin: 0;
+    max-width: 425px;
+  }
+  * {
+    font-family: "Signika Negative", sans-serif;
+    color: white;
+  }
+  /* Navbar */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .navbar__list {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    font-size: 1rem;
+    gap: 1rem;
+    margin: 1% auto;
+  }
+  .navbar__list--center {
+    justify-content: center;
+  }
+  .navbar a {
+    text-decoration: none;
+  }
+  .navbar li:hover {
+    text-shadow: 2px 2px rgb(227, 215, 215);
+    transition-duration: 0.2s;
+  }
+  /* Home page */
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.8%;
+  }
+  .intro__name {
+    align-self: flex-end;
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .intro__name--title {
+    margin: 0;
+    padding: 0;
+  }
+  .intro__name--contact {
+    margin: 0;
+    padding: 0;
+  }
+  .intro__portrait {
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 2.5%;
+  }
+  .intro__portrait--photo {
+    width: 75%;
+    border-radius: 50%;
+  }
+  .about {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+    font-size: 1rem;
+  }
+  .about__para {
+    width: 33%;
+  }
+  .about__para--left {
+    margin-left: 5%;
+    padding-right: 10%;
+  }
+  .about__para--right {
+    margin-left: 5%;
+  }
+  .projects {
+    margin: 0 5%;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5.8%;
+    padding-top: 5%;
+  }
+  .projects__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .projects img {
+    width: 50%;
+  }
+  .contact {
+    text-align: center;
+    margin-top: 5.8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+  }
+  .contact__img {
+    width: 10px;
+  }
+  footer {
+    text-align: center;
+    background-color: #F89880;
+    margin-top: 5.8%;
+  }
+}
+
+/*# sourceMappingURL=phone-styles.css.map */
